@@ -591,9 +591,9 @@
       <h2 class="section-title">Background</h2>
       <div class="about-grid">
         <div class="about-journey">
-          <p>I got into data science because I like using data to help people make better decisions, and increasingly, that includes decisions about the infrastructure behind AI itself, where compute, energy, and water are becoming real design constraints rather than afterthoughts.</p>
+          <p>I got into data science because I like using data to help people make better decisions — and increasingly, that includes decisions about the infrastructure behind AI itself, where compute, energy, and water are becoming real design constraints rather than afterthoughts.</p>
           <p>At Data Science Alliance, I built Python pipelines feeding ML experimentation and folded LLM summarization into an existing analytics workflow, validating outputs through iterative error analysis. Volunteering with the Delta Rising Foundation, I applied the same rigor to geospatial data, helping identify sites for redwood reforestation and carbon sequestration.</p>
-          <p>I'm looking for a genuinely collaborative team that's dedicated to what the company is actually building, somewhere I can own real problems and grow fast.</p>
+          <p>I'm looking for a genuinely collaborative team that's dedicated to what the company is actually building — somewhere I can own real problems and grow fast.</p>
         </div>
         <div class="box-stack">
           <div class="box">
@@ -617,41 +617,37 @@
 
       <div class="project">
         <div class="project-head">
-          <h3 class="project-title">[Project One Name]</h3>
-          <span class="project-metric">[ADD METRIC]</span>
+          <h3 class="project-title">Data Center Energy &amp; Water Footprint Tracker</h3>
+          <span class="project-metric">r = -0.50 correlation</span>
         </div>
-        <p class="project-desc">[One or two sentences: what the system does and the problem it solves. Lead with outcome, then mechanism.]</p>
-        <p class="project-stack">Python · PyTorch · FastAPI · PostgreSQL</p>
+        <p class="project-desc">Built an end-to-end pipeline pulling public EIA electricity demand/pricing data and EPA facility registry data to test — rather than assume — whether data center growth is actually driving up electricity prices in Santa Clara County. Found that California retail prices grew roughly 249% since 2001 while metered consumption actually declined about 16% over the same period, a statistically significant negative correlation (r = -0.50, p = 0.011) that points toward fixed-cost recovery over a shrinking sales base rather than the simple "data centers raised my bill" narrative. Mapped 281 EPA-registered facilities and shipped a Streamlit dashboard with a Prophet-based price forecast.</p>
+        <p class="project-stack">Python · DuckDB · Streamlit · Prophet</p>
         <div class="project-links">
-          <a href="[repo-url]" target="_blank" rel="noopener">GitHub</a>
-          <a href="[demo-url]" target="_blank" rel="noopener">Demo</a>
-          <a href="[case-study-url]">Case study</a>
+          <a href="https://github.com/DerekYHuang/Datacenter_Footprint_Tracker" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
       <div class="project">
         <div class="project-head">
-          <h3 class="project-title">[Project Two Name]</h3>
-          <span class="project-metric">[ADD METRIC]</span>
+          <h3 class="project-title">Semiconductor Contamination &amp; Vapor-Intrusion Risk Q&amp;A</h3>
+          <span class="project-metric">Local RAG · In progress</span>
         </div>
-        <p class="project-desc">[One or two sentences on this project's purpose and results.]</p>
-        <p class="project-stack">SQL · dbt · Airflow · AWS</p>
+        <p class="project-desc">A fully local retrieval-augmented generation system that answers questions about semiconductor-linked groundwater contamination and vapor-intrusion risk in Santa Clara County — home to more EPA Superfund sites than any other U.S. county, mostly legacy chip-fab facilities — grounded in real EPA, DTSC, and regional water board records rather than a model's general knowledge. Runs entirely offline: local embeddings, a Chroma vector store, and a small open-weight LLM served through Ollama, with a hand-written evaluation set and an optional LoRA fine-tuning step planned to measure improvement against the base model.</p>
+        <p class="project-stack">Python · Chroma · Hugging Face · Ollama · LoRA/PEFT</p>
         <div class="project-links">
-          <a href="[repo-url]" target="_blank" rel="noopener">GitHub</a>
-          <a href="[case-study-url]">Case study</a>
+          <a href="https://github.com/DerekYHuang/Semiconductor_Risk_Q-A" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
       <div class="project">
         <div class="project-head">
-          <h3 class="project-title">[Project Three Name]</h3>
-          <span class="project-metric">[ADD METRIC]</span>
+          <h3 class="project-title">San Diego MTS: Bus Network Optimization</h3>
+          <span class="project-metric">-18% travel time</span>
         </div>
-        <p class="project-desc">[One or two sentences on this project's purpose and results.]</p>
-        <p class="project-stack">React · TypeScript · scikit-learn</p>
+        <p class="project-desc">Analyzed real-world transit data to identify inefficiencies in San Diego's bus network, then developed algorithms that reduced simulated travel times by 18% and proposed three route optimizations based on peak ridership patterns — recommendations aimed at improving service for 200K+ daily commuters.</p>
+        <p class="project-stack">Python · Pandas · Matplotlib</p>
         <div class="project-links">
-          <a href="[repo-url]" target="_blank" rel="noopener">GitHub</a>
-          <a href="[demo-url]" target="_blank" rel="noopener">Demo</a>
+          <a href="https://github.com/DerekYHuang/San-Diego-MTS" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
 
@@ -702,7 +698,7 @@
   <section id="resume">
     <div class="wrap">
       <p class="eyebrow">Résumé</p>
-      <h2 class="section-title">Current Resume</h2>
+      <h2 class="section-title">Curriculum Vitae</h2>
       <p class="resume-updated">Last updated: August 2026</p>
       <div class="doc-frame">
         <div class="doc-titlebar">
