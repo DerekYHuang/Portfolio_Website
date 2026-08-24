@@ -620,7 +620,7 @@
           <h3 class="project-title">Data Center Energy &amp; Water Footprint Tracker</h3>
           <span class="project-metric">r = -0.50 correlation</span>
         </div>
-        <p class="project-desc">Built an end-to-end pipeline pulling public EIA electricity demand/pricing data and EPA facility registry data to test — rather than assume — whether data center growth is actually driving up electricity prices in Santa Clara County. Found that California retail prices grew roughly 249% since 2001 while metered consumption actually declined about 16% over the same period, a statistically significant negative correlation (r = -0.50, p = 0.011) that points toward fixed-cost recovery over a shrinking sales base rather than the simple "data centers raised my bill" narrative. Mapped 281 EPA-registered facilities and shipped a Streamlit dashboard with a Prophet-based price forecast.</p>
+        <p class="project-desc">Data centers get blamed for rising electric bills — I decided to test that claim instead of assuming it. Pulling public EIA and EPA data for Santa Clara County, I found something the popular narrative gets backwards: electricity use actually fell while prices nearly tripled, a statistically significant pattern that points to a very different culprit than "AI is spiking your bill."</p>
         <p class="project-stack">Python · DuckDB · Streamlit · Prophet</p>
         <div class="project-links">
           <a href="https://github.com/DerekYHuang/Datacenter_Footprint_Tracker" target="_blank" rel="noopener">GitHub</a>
@@ -632,7 +632,7 @@
           <h3 class="project-title">Semiconductor Contamination &amp; Vapor-Intrusion Risk Q&amp;A</h3>
           <span class="project-metric">Local RAG · In progress</span>
         </div>
-        <p class="project-desc">A fully local retrieval-augmented generation system that answers questions about semiconductor-linked groundwater contamination and vapor-intrusion risk in Santa Clara County — home to more EPA Superfund sites than any other U.S. county, mostly legacy chip-fab facilities — grounded in real EPA, DTSC, and regional water board records rather than a model's general knowledge. Runs entirely offline: local embeddings, a Chroma vector store, and a small open-weight LLM served through Ollama, with a hand-written evaluation set and an optional LoRA fine-tuning step planned to measure improvement against the base model.</p>
+        <p class="project-desc">Santa Clara County has more EPA Superfund sites than anywhere else in the U.S. — most of them old chip fabs whose contamination is still being monitored decades later, buried in dense, scattered government records almost no one actually reads. I'm building a fully local AI system that can answer real questions about that risk directly from the source documents, no cloud, no shortcuts.</p>
         <p class="project-stack">Python · Chroma · Hugging Face · Ollama · LoRA/PEFT</p>
         <div class="project-links">
           <a href="https://github.com/DerekYHuang/Semiconductor_Risk_Q-A" target="_blank" rel="noopener">GitHub</a>
@@ -644,7 +644,7 @@
           <h3 class="project-title">San Diego MTS: Bus Network Optimization</h3>
           <span class="project-metric">-18% travel time</span>
         </div>
-        <p class="project-desc">Analyzed real-world transit data to identify inefficiencies in San Diego's bus network, then developed algorithms that reduced simulated travel times by 18% and proposed three route optimizations based on peak ridership patterns — recommendations aimed at improving service for 200K+ daily commuters.</p>
+        <p class="project-desc">San Diego's buses move 200K+ riders a day, but nobody had actually modeled where the network was quietly failing them. I dug into real ridership and route data to find out — and turned it into three concrete route changes projected to cut travel times by 18%.</p>
         <p class="project-stack">Python · Pandas · Matplotlib</p>
         <div class="project-links">
           <a href="https://github.com/DerekYHuang/San-Diego-MTS" target="_blank" rel="noopener">GitHub</a>
