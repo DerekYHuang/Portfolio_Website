@@ -194,21 +194,14 @@
   .btn-ghost:hover{ border-color: var(--ink); }
 
   .hero-portrait{
-    width: 168px;
-    height: 168px;
+    width: 200px;
+    max-width: 40vw;
     border-radius: var(--radius);
     background: var(--bg-panel);
     border: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 12px;
-    text-align: center;
     overflow: hidden;
   }
-  .hero-portrait img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-portrait img{ display: block; width: 100%; height: auto; }
 
   .hero-links{
     display: flex;
@@ -502,7 +495,7 @@
   @media (max-width: 860px){
     .about-grid{ grid-template-columns: 1fr; }
     .hero-grid{ grid-template-columns: 1fr; }
-    .hero-portrait{ order: -1; }
+    .hero-portrait{ order: -1; max-width: 60vw; }
   }
   @media (max-width: 680px){
     .wrap{ padding: 0 20px; }
@@ -578,8 +571,7 @@
         </div>
       </div>
       <div class="hero-portrait">
-        <!-- Replace with <img src="portrait.jpg" alt="Derek Huang"> -->
-        [Add portrait]
+        <img src="images/Headshot.png" alt="Derek Huang">
       </div>
     </div>
   </section>
